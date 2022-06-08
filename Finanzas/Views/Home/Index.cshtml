@@ -1,0 +1,36 @@
+﻿@using Finanzas.Model
+@*@model Finanzas.Model.Cuenta*@
+@{
+   var cuenta = ViewData["cuenta"] as Cuenta;
+   var user = ViewData["user"] as Usuario;
+}
+@{
+    <div class="container">
+        <div> 
+            <h1 class="text-center">Bienvenido: @user.Nombre</h1>
+            <div>
+                <script src="https://code.highcharts.com/highcharts.js"></script>
+                <script src="https://code.highcharts.com/modules/exporting.js"></script>
+                <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+                <div id="container"></div>
+            </div>
+            <script src="~/js/Graficos.js"></script>
+            @if(cuenta.Saldo > 0)
+            {
+                <p class="text-center text-success"> Saldo: @cuenta.Saldo</p>
+            } else
+            {
+                @if(cuenta.Saldo < 0)
+                {
+                    <p class="text-center text-danger"> Saldo: @cuenta.Saldo</p>
+                }
+                else
+                {
+                    <p class="text-center text-warning"> Saldo: @cuenta.Saldo</p>
+                }
+            }
+            
+            
+        </div>
+    </div>
+}
