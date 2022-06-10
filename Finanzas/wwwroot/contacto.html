@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/site.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Contacto</title>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg bg-danger" id="bd">
+        <div class="container-fluid" id="bd">
+            <Link to="/" class="navbar-brand text-white" href="#">MyCash</Link>
+            <button class="navbar-toggler  bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" id="toggleIcon">↓</span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active text-white" aria-current="page">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="nosotros.html" class="nav-link text-white">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="servicios.html" class="nav-link text-white">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contacto.html" class="nav-link text-white">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Acceso" class="nav-link text-white">Login</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" />
+                    <button class="btn btn-secondary" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <br />
+    <main role="main" class="flex-shrink-0 mt-5">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 ">
+                    <div class="container w-75 rounded shadow bg-primary" id="bd">
+                        <h1 class="mb-4 text-center text-light">Contacto</h1>
+                        <form class="mb-5">
+
+                            <div class="form-group">
+                                <label htmlFor="nya" class="negrita text-light">Nombres y Apellidos</label>
+                                <input type="text" class="form-control" id="nya" required />
+                            </div>
+
+                            <div class="form-group">
+                                <label htmlFor="email" class="negrita text-light">Email</label>
+                                <input type="email" class="form-control" id="email" required />
+                            </div>
+
+                            <div class="form-group">
+                                <label htmlFor="asunto" class="negrita text-light">Asunto</label>
+                                <input type="text" class="form-control" id="asunto" required />
+                            </div>
+
+                            <div class="form-group">
+                                <label htmlFor="mensaje" class="negrita text-light">Mensaje</label>
+                                <textarea class="form-control" id="mensaje" required></textarea>
+                            </div>
+
+                            <button type="submit" class="w-100 btn btn-light mt-3 mb-3" id="btnCont">Enviar</button>
+
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="embed-responsive" id="mapa">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d486364.66200243676!2d-63.01163445!3d-17.757642900000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93f1e81ca7c01a63%3A0x5c8b0a53a467611b!2sSanta%20Cruz%20de%20la%20Sierra!5e0!3m2!1ses-419!2sbo!4v1653891082933!5m2!1ses-419!2sbo" width="100%" height="100%"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/site.js"></script>
+</body>
+</html>

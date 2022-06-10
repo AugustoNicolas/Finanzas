@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/site.css" />
+    <title>Inicio</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg" id="bd">
+        <div class="container-fluid ">
+            <Link to="/" class="navbar-brand text-white" href="#">MyCash</Link>
+            <button class="navbar-toggler  bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" id="toggleIcon">↓</span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active text-white" aria-current="page">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="nosotros.html" class="nav-link text-white">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="servicios.html" class="nav-link text-white">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contacto.html" class="nav-link text-white">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Acceso" class="nav-link text-white">Login</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" />
+                    <button class="btn btn-secondary" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="card text-dark" id="contenedor">
+        <img class="card-img" src="/img/fondo.JPG" id="fondito" alt="Card image" />
+        <div class="card-img-overlay" id="parrafo">
+            <div id="textos">
+                <p class="card-title" id="h1">Tus finanzas al siguiente nivel</p>
+                <p class="card-text" id="pa">Estamos aqui para ayudarte, tus finanzas no serán un dolor de cabeza de nuevo</p>
+                <div>
+                    <Link to="/login"><button type="submit" class="btn btn-primary" id="boton">¡Comenzar!</button></Link>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card text-dark" id="contenedor">
+        <img class="card-img" src="img/info.jpg" alt="Card image" />
+        <div class="card-img-overlay" id="parrafoInf">
+            <div id="textosInf">
+                <h1 class="card-title" id="h1Inf">¡Financia tu dinero de la mejor manera!</h1>
+                <p class="card-text" id="paInf">¡Con nuestra página no volverás a perder las cuentas!, registrate y se parte de nuestra comunidad. Podrás realizar muchas funciones, ¡no te lo pierdas! MyMoney, llevando tus finanzas al siguiente nivel</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="ad">
+        <img src="img/sadvice.jpg" id="img"></img>
+    </div>
+
+    <div class="container marketing">
+
+        <div class="row">
+            <div class="col-lg-4">
+                <img class="rounded-circle" src={cat} alt="Generic placeholder image" width="140" height="140" />
+                <h2>Heading</h2>
+                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+            </div>
+
+            <div class="col-lg-4">
+                <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140" />
+                <h2>Heading</h2>
+                <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+            </div>
+
+            <div class="col-lg-4">
+                <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140" />
+                <h2>Heading</h2>
+                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="page-footer font-small teal pt-4">
+        <div class="container-fluid text-center text-md-left">
+            <div class="row">
+                <div class="col-md-6 mt-md-0 mt-3">
+                    <h5 class="text-uppercase font-weight-bold">Footer text 1</h5>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita sapiente sint, nulla, nihil
+                        repudiandae commodi voluptatibus corrupti animi sequi aliquid magnam debitis, maxime quam recusandae
+                        harum esse fugiat. Itaque, culpa?
+                    </p>
+                </div>
+                <hr class="clearfix w-100 d-md-none pb-3" />
+                <div class="col-md-6 mb-md-0 mb-3">
+                    <h5 class="text-uppercase font-weight-bold">Footer text 2</h5>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio deserunt fuga perferendis modi earum
+                        commodi aperiam temporibus quod nulla nesciunt aliquid debitis ullam omnis quos ipsam, aspernatur id
+                        excepturi hic.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright text-center py-3">
+            © 2020 Copyright:
+            <p>Equipo React</p>
+        </div>
+    </footer>
+
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/site.js"></script>
+</body>
+</html>

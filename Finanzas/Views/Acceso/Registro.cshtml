@@ -33,10 +33,11 @@
                 <input type="password" class="form-control" placeholder="Password" asp-for="Clave">
                 <span asp-validation-for="Clave" class="text-danger"></span>
               </div>
-              <button type="submit" class="btn btn-primary m-5">Registrarse</button>
+              <button type="submit" class="btn btn-primary m-5 text-center">Registrarse</button>
             </form>
         </div>
         <p  class="text-center">Ya tiene una cuenta? <a class="nav-link" asp-area="" asp-controller="Acceso" asp-action="Index">Login</a>  </p>
+        <a class="text-center nav-link" href="~/index.html" >Volver a Inicio</a>
     </div>
     
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
