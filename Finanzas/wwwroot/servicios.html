@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/site.css" />
+    <title>Servicios</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg" id="bd">
+        <div class="container-fluid ">
+            <Link to="/" class="navbar-brand text-white" href="#">MyCash</Link>
+            <button class="navbar-toggler  bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" id="toggleIcon">↓</span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active text-white" aria-current="page">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="nosotros.html" class="nav-link text-white">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="servicios.html" class="nav-link text-white">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contacto.html" class="nav-link text-white">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Acceso" class="nav-link text-white">Login</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" />
+                    <button class="btn btn-secondary" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="card mb-3">
+        <img class="card-img-top" src="img/fondof.jpg" alt="Card image cap" />
+        <div class="card-body">
+            <h1 class="card-title">Tu espacio</h1>
+            <p class="card-text">
+                Es aqui donde podrás empezar tu aventura, añadirás saldo, verás tu progreso, recibirás informacion y mucho más... dale click al botón 'Comenzar'
+                para dar inicio a tu nueva travesía con las finanzas
+            </p>
+            <p><a className="btn btn-primary btn-lg" href='http://localhost:3000/#/servicios' target="_blank" role="button">Comenzar</a></p>
+        </div>
+    </div>
+    <hr />
+    <div class="card mb-3">
+        <img class="card-img-top" src="img/categorias.jpg" alt="Card image cap" />
+        <div class="card-body">
+            <h1 class="card-title">Categorias</h1>
+            <p class="card-text">¡Aquí podrás visualizar las distintas categorias disponibles!, tambie podras añadir, restar o actualizarlas a tu estilo</p>
+            <Link to="/categorias"><button type="submit" class="btn btn-primary">Categorias</button></Link>
+        </div>
+    </div>
+
+    <footer class="page-footer font-small teal pt-4">
+        <div class="container-fluid text-center text-md-left">
+            <div class="row">
+                <div class="col-md-6 mt-md-0 mt-3">
+                    <h5 class="text-uppercase font-weight-bold">Footer text 1</h5>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita sapiente sint, nulla, nihil
+                        repudiandae commodi voluptatibus corrupti animi sequi aliquid magnam debitis, maxime quam recusandae
+                        harum esse fugiat. Itaque, culpa?
+                    </p>
+                </div>
+                <hr class="clearfix w-100 d-md-none pb-3" />
+                <div class="col-md-6 mb-md-0 mb-3">
+                    <h5 class="text-uppercase font-weight-bold">Footer text 2</h5>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio deserunt fuga perferendis modi earum
+                        commodi aperiam temporibus quod nulla nesciunt aliquid debitis ullam omnis quos ipsam, aspernatur id
+                        excepturi hic.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright text-center py-3">
+            © 2020 Copyright:
+            <p>Equipo React</p>
+        </div>
+    </footer>
+
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/site.js"></script>
+</body>
+</html>
