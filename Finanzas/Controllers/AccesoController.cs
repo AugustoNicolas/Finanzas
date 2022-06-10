@@ -42,7 +42,8 @@ namespace Finanzas.Controllers
 
                 HttpContext.Session.SetString("SessionUser", JsonConvert.SerializeObject(usuario));
 
-                return RedirectToAction("Index", "Home");  
+                return RedirectToAction("Index", "Transaccions");
+                //return RedirectToAction("Index", "Home");  
             }
             else
             {
@@ -94,7 +95,8 @@ namespace Finanzas.Controllers
                 await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity));
                 HttpContext.Session.SetString("SessionUser", JsonConvert.SerializeObject(_usuario));
 
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("Index", "Transaccions");
+                //return RedirectToAction("Index", "Home");
             }
             else
             {

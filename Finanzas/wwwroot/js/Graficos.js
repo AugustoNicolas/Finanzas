@@ -1,4 +1,24 @@
-﻿var colors = Highcharts.getOptions().colors,
+﻿
+$(document).ready(function () {
+    $.ajax({
+        type: "GET",
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",
+        url ="",
+        error: function () {
+            alert("Error de codigo xd")
+        },
+        success: function (data) {
+            console.log(data);
+            graficaPastel(data);
+        }
+    })
+})
+
+
+
+function graficaPastel() {
+var colors = Highcharts.getOptions().colors,
     categories = [
         'Earnings',
         'Deductions',
@@ -145,3 +165,4 @@ Highcharts.chart('container', {
         }]
     }
 });
+}

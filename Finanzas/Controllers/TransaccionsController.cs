@@ -17,6 +17,9 @@ namespace Finanzas.Controllers
     {
         private readonly AppDbContext _context;
 
+        public Usuario _usuario;
+        public Cuenta _Cuenta;
+
         public TransaccionsController(AppDbContext context)
         {
             _context = context;
@@ -30,10 +33,15 @@ namespace Finanzas.Controllers
             if (HttpContext.Session.GetString("SessionUser") != null)
             {
                 var sessionUser = JsonConvert.DeserializeObject<Usuario>(HttpContext.Session.GetString("SessionUser"));
+                _usuario = _context.usuarios.Find(sessionUser.Id);
+                _Cuenta = _context.cuenta.Where(c => c.usuario.Id == sessionUser.Id).FirstOrDefault();
+                ViewData["cuenta"] = _Cuenta;
+                ViewData["user"] = _usuario;
                 return _context.transaccion != null ?
                           View(await _context.transaccion.Where(t => t.cuenta.usuario.Id == sessionUser.Id ).Include(c => c.categoria).ToListAsync()) :
                           Problem("Entity set 'AppDbContext.transaccion'  is null.");
             }
+
             return RedirectToAction("Index", "Acceso");
             
         }
